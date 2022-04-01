@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numArr = [52, 273, 586, 32, 57, 103, 312, 2];
+      // 최대값과 최소값 출력하기
+      let max = 0;
+      let min = 999;
+      for (var x = 0; x < numArr.length; x++) {
+        if (numArr[x] > max) {
+          max = numArr[x];
+        }
+        if (numArr[x] < min) {
+          min = numArr[x];
+        }
+      }
+      document.writeln("최대값 : " + max + "<br>");
+      document.writeln("최소값 : " + min);
+    </script>
+  </body>
+</html>
