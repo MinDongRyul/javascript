@@ -55,6 +55,31 @@ AB?A
 jpg, png, gif
 .+\.(png|jpg|gif)
 
+lookahead : 단어를 소비하지 않음
+/ab(?=c)/ => abc라는 패턴을 찾되, c는 돌려주지 마
+
+전방탐색 : ?=
+후방탐색 : ?<=
+
+숫자가 포함, 문자 포함, 특수문자 최소 8 ~ 15자리 허용
+/(?=.*[\d])(?=.*[A-Za-z])(?=.*[!@#$%])[\dA-Za-z!@#$%]{8,15}/
+
+(?=.*[\d])(?=.*[A-Za-z])(?=.*[!@#$%]) : 조건
+[\dA-Za-z!@#$%]{8,15} : 돌려받는 것
+
+client : html + css => 정적 컨텐츠
+           javascript => 동적 컨텐츠
+
+	jquery => javascript 브라우저마다 호환성이 떨어짐
+		 document.querySelector("") => $("#name")
+	
+	javascript version => 기능이 추가
+
+
+
+
+
+
 
 
 
